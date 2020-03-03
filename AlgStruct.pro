@@ -18,3 +18,11 @@ SOURCES += main.cpp\
 HEADERS  += mainwindow.h
 
 FORMS    += mainwindow.ui
+
+TRANSLATIONS += AlgStruct_ru.ts
+
+RESOURCES += \
+    algstruct.qrc
+
+DISTFILES += \
+    AlgStruct_ru.ts

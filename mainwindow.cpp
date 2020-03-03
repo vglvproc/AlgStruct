@@ -7,24 +7,24 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     QTreeWidgetItem* sortNode = new QTreeWidgetItem(ui->twMain);
-    sortNode->setText(0, QString("Алгоритмы сортировки"));
+    sortNode->setText(0, tr("Sorting algorithms"));
 
     QTreeWidgetItem* bogosortNode = new QTreeWidgetItem(sortNode);
-    bogosortNode->setText(0, QString("Случайная сортировка"));
+    bogosortNode->setText(0, tr("Bogosort"));
 
     QTreeWidgetItem* bubbleNode = new QTreeWidgetItem(sortNode);
-    bubbleNode->setText(0, QString("Пузырьковая сортировка"));
+    bubbleNode->setText(0, tr("Bubble sort"));
 
     QTreeWidgetItem* insertionNode = new QTreeWidgetItem(sortNode);
-    insertionNode->setText(0, QString("Сортировка вставками"));
+    insertionNode->setText(0, tr("Insertion sort"));
 
     QTreeWidgetItem* shellNode = new QTreeWidgetItem(sortNode);
-    shellNode->setText(0, QString("Сортировка Шелла"));
+    shellNode->setText(0, tr("Shell sort"));
 
     QTreeWidgetItem* treeNode = new QTreeWidgetItem(sortNode);
-    treeNode->setText(0, QString("Сортировка двоичным деревом"));
+    treeNode->setText(0, tr("Tree sort"));
 
-    ui->twMain->setHeaderLabel(QString("Алгоритмы и структуры данных"));
+    ui->twMain->setHeaderLabel(tr("Algorithms and data structures"));
     ui->twMain->setFont(QFont("Times", 12));
     ui->twMain->expandAll();
 }
