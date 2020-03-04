@@ -33,3 +33,64 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_twMain_itemDoubleClicked(QTreeWidgetItem *item, int column)
+{
+
+    if(item->parent()) {
+        switch(item->parent()->indexOfChild(item))
+        {
+        case 0: {
+            bogosortInit();
+            break;
+            }
+        case 1: {
+            bubbleSortInit();
+            break;
+            }
+        case 2: {
+            insertionSortInit();
+            break;
+            }
+        case 3: {
+            shellSortInit();
+            break;
+            }
+        case 4: {
+            treeSortInit();
+            break;
+            }
+        }
+    }
+}
+
+void MainWindow::bogosortInit()
+{
+    QPushButton *pb = new QPushButton();
+    this->ui->gridLayoutUser->addWidget(pb);
+}
+
+void MainWindow::bubbleSortInit()
+{
+    QPushButton *pb = new QPushButton();
+    this->ui->gridLayoutUser->addWidget(pb);
+}
+
+void MainWindow::insertionSortInit()
+{
+    QPushButton *pb = new QPushButton();
+    this->ui->gridLayoutUser->addWidget(pb);
+}
+
+void MainWindow::shellSortInit()
+{
+    QPushButton *pb = new QPushButton();
+    this->ui->gridLayoutUser->addWidget(pb);
+}
+
+void MainWindow::treeSortInit()
+{
+    QPushButton *pb = new QPushButton();
+    this->ui->gridLayoutUser->addWidget(pb);
+}
+
