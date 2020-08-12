@@ -67,13 +67,16 @@ void MainWindow::on_twMain_itemDoubleClicked(QTreeWidgetItem *item, int column)
 void MainWindow::bogosortInit()
 {
     QPushButton *pb = new QPushButton();
-    this->ui->gridLayoutUser->addWidget(pb);
+    //this->ui->gridLayoutUser->addWidget(pb);
+    this->ui->stackedWidget->setCurrentIndex(0);
+
 }
 
 void MainWindow::bubbleSortInit()
 {
     QPushButton *pb = new QPushButton();
-    this->ui->gridLayoutUser->addWidget(pb);
+    //this->ui->gridLayoutUser->addWidget(pb);
+    this->ui->stackedWidget->setCurrentIndex(1);
 }
 
 void MainWindow::insertionSortInit()
